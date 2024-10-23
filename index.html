@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gabarito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header id="header">
+        <span class="alert-symbol">!</span>
+        <h1>LDL</h1>
+    </header>
+
+    <!-- Estações -->
+    <div id="stations">
+        <!-- Estação 1 -->
+        <div class="station" id="station1">
+            <span class="alert-symbol">!</span>
+            <h2>EAU</h2>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 0)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 1)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 2)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 3)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 4)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station1', 5)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+        </div>
+
+        <!-- Estação 2 -->
+        <div class="station" id="station2">
+            <span class="alert-symbol">!</span>
+            <h2>EGN</h2>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 0)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 1)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 2)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 3)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 4)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station2', 5)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+        </div>
+
+        <!-- Estação 3 -->
+        <div class="station" id="station3">
+            <span class="alert-symbol">!</span>
+            <h2>EPZ</h2>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 0)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 1)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 2)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 3)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 4)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station3', 5)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+        </div>
+
+        <!-- Estação 4 -->
+        <div class="station" id="station4">
+            <span class="alert-symbol">!</span>
+            <h2>EBL</h2>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 0)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 1)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 2)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 3)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 4)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station4', 5)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+        </div>
+
+        <!-- Estação 5 -->
+        <div class="station" id="station5">
+            <span class="alert-symbol">!</span>
+            <h2>EBZ</h2>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 0)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 1)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 2)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 3)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 4)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+            <div class="line-item">
+                <button onclick="handleClick(this, 'station5', 5)">O</button>
+                <input type="text" placeholder="Nome e Linha" />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+#header.red {
+    background-color: #dc3545;
+}
+
+#header .alert-symbol {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estações */
+#stations {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.station {
+    border: 2px solid #ddd;
+    width: 18%;
+    padding: 10px;
+    background-color: #28a745;
+    position: relative;
+}
+
+.station.red {
+    background-color: #dc3545;
+}
+
+.station h2 {
+    margin: 10px 0;
+}
+
+.station .alert-symbol {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Botões e campos de texto */
+.station button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #0069d9;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.station button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.station button.pressed {
+    background-color: #dc3545;
+}
+
+.station input {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Separação visual entre linhas */
+.line-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
