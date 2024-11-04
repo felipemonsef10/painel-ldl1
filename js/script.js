@@ -68,7 +68,7 @@ function loadStationState(stationId) {
 
 // Carregar estado de todas as estações ao carregar a página
 window.onload = function() {
-    const stationIds = ['station1', 'station2', 'station3', 'station4', 'station5'];
+    const stationIds = ['station1', 'station2', 'station3', 'station4', 'station5', 'station6'];
     stationIds.forEach(stationId => {
         loadStationState(stationId);
     });
