@@ -94,3 +94,14 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
+
+textarea.auto-expand {
+    width: 100%;
+    min-height: 30px; /* Altura mínima */
+    max-height: 200px; /* Altura máxima */
+    resize: none; /* Impede o redimensionamento manual pelo usuário */
+    overflow: hidden; /* Remove a barra de rolagem */
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}

@@ -4,7 +4,6 @@ function handleClick(button, stationId, buttonIndex) {
     button.classList.toggle("pressed");
 
     const station = document.getElementById(stationId);
-    const allButtons = station.querySelectorAll("button");
     const pressedButtons = station.querySelectorAll(".pressed");
 
     // Salvar estado do botão no localStorage
@@ -48,7 +47,7 @@ function loadStationState(stationId) {
     if (stationState) {
         const station = document.getElementById(stationId);
         const buttons = station.querySelectorAll("button");
-        const inputs = station.querySelectorAll("input");
+        const inputs = station.querySelectorAll("textarea");
 
         buttons.forEach((button, index) => {
             if (stationState[`button${index}`]) {
@@ -61,9 +60,16 @@ function loadStationState(stationId) {
         inputs.forEach((input, index) => {
             if (stationState[`input${index}`] !== undefined) {
                 input.value = stationState[`input${index}`];
+                adjustTextareaHeight(input);
             }
         });
     }
+}
+
+// Função para ajustar a altura do textarea automaticamente
+function adjustTextareaHeight(textarea) {
+    textarea.style.height = 'auto'; // Redefine a altura para auto
+    textarea.style.height = textarea.scrollHeight + 'px'; // Ajusta para a altura necessária
 }
 
 // Carregar estado de todas as estações ao carregar a página
@@ -73,13 +79,14 @@ window.onload = function() {
         loadStationState(stationId);
     });
 
-    // Adicionar listeners aos campos de texto para salvar conteúdo
+    // Adicionar listeners aos campos de texto para salvar conteúdo e expandir dinamicamente
     stationIds.forEach(stationId => {
         const station = document.getElementById(stationId);
-        const inputs = station.querySelectorAll("input");
+        const inputs = station.querySelectorAll("textarea");
         inputs.forEach((input, index) => {
             input.addEventListener("input", () => {
                 saveInputState(stationId, index, input.value);
+                adjustTextareaHeight(input);
             });
         });
     });
