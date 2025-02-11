@@ -3,6 +3,7 @@ body {
     text-align: center;
 }
 
+
 /* Cabeçalho */
 #header {
     background-color: #28a745;
@@ -11,9 +12,11 @@ body {
     position: relative;
 }
 
+
 #header.red {
     background-color: #dc3545;
 }
+
 
 #header .alert-symbol {
     font-size: 40px;
@@ -24,6 +27,7 @@ body {
     transform: translateY(-50%);
 }
 
+
 /* Estações */
 #stations {
     display: flex;
@@ -32,20 +36,10 @@ body {
 }
 
 .station {
-    border: 2px solid #ddd;
-    width: 18%;
-    padding: 10px;
-    background-color: #28a745;
+    width: 20%;
     position: relative;
 }
 
-.station.red {
-    background-color: #dc3545;
-}
-
-.station h2 {
-    margin: 10px 0;
-}
 
 .station .alert-symbol {
     font-size: 30px;
@@ -55,8 +49,26 @@ body {
     top: 10px;
 }
 
+
+/* Separação visual entre linhas */
+.line-item {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    border: 5px solid #000000;
+    width: 90%;
+    padding: 10px;
+    background-color: #28a745;
+}
+
+
+.line-item.red {
+    background-color: #dc3545;
+}
+
+
 /* Botões e campos de texto */
-.station button {
+.line-item button {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -67,33 +79,19 @@ body {
     cursor: pointer;
     border-radius: 50%;
     text-align: center;
-    line-height: 45px;
+    line-height: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-weight: bold;
 }
 
-.station button:hover {
-    background-color: #218838;
-    transform: scale(1.1);
-}
 
-.station button.pressed {
-    background-color: #dc3545;
-}
-
-.station input {
+.line-item input {
     width: 150px;
     padding: 5px;
     margin-bottom: 10px;
 }
 
-/* Separação visual entre linhas */
-.line-item {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
 
 textarea.auto-expand {
     width: 100%;
@@ -104,4 +102,24 @@ textarea.auto-expand {
     padding: 5px;
     box-sizing: border-box;
     font-size: 1rem;
+}
+
+
+.fixed-message {
+    border: 12 solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+    width: 200px; /* Ajuste conforme necessário */
+    height: 44px; /* Ajuste para ocupar duas linhas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+button.pressed {
+    background-color: rgb(151, 38, 38);
 }
